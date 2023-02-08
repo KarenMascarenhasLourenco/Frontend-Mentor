@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Fraunces';
+}
+.category, button,p{
+    font-family: 'Montserrat';
+}
+.category{
+    font-size:12px;
+    letter-spacing: .4rem;
+}
+main{
+    display:flex;
+    width: 40%;  
+    margin-bottom: 2rem;
+}
+main img{
+    width: 50%;
+    border-radius: 5% 0 0 5%;
+}
+h1, .precoAtual{
+    font-weight: 700; 
+}
+main .content{
+    display:flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%) ;
+    padding: 1rem;
+    width: 50%;
+    justify-content: space-around;
+    border-radius: 0 5% 5% 0;
+}
+p{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+button{
+    height: 35px;
+    background-color:hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border:none;
+}
+main button img{
+    width: 12px;
+}
+.preco{
+    display:flex;
+    align-items: center;
+}
+.precoAtual{
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    padding-right: 10%;
+}
+.precoAntigo{
+    text-decoration: line-through;
+}
+.precoAtual, .precoAntigo{
+    display: inline;
+}
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 376px){
+    .imagemMobile {
+            display: none;
+        }
+}
+@media (max-width:375px){
+    .imagemDesktop{
+        display:none;
+    }
+    main{
+        flex-direction:column;
+        width:80%;
+    }
+    main img{
+        width: 100%;
+        border-radius: 5% 5% 0 0;
+    }
+    main .content{
+        width:90%;
+        border-radius: 0 0 5% 5%;
+    }
+    p{
+        padding: 0.5rem 0;
+    }
+}
