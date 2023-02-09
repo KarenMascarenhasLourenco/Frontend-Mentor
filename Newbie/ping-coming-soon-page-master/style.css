@@ -1,0 +1,72 @@
+@import url(script.js);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    font-family: 'Libre Franklin';
+    flex-direction:column;
+    font-size: 20px;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+h1,h2{
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+h1{
+    color:hsl(0, 0%, 59%);
+}
+h1 strong{
+    color: hsl(209, 33%, 12%);
+}
+h2{
+    font-size: 16px;
+}
+form{
+    margin: 1rem 0;
+}
+
+input, button{
+    height: 3em;
+    border-radius: 2em;
+}
+input{
+    width: 25em;
+    border:solid 1px hsl(223, 100%, 88%);
+    padding-left: 1em;
+    margin-right: 1em;
+}
+button{
+    background-color: hsl(223, 87%, 63%);
+    color:white;
+    border:none;
+    width: 10em;
+}
+img{
+    margin:2rem 0;
+}
+#nameError {
+    display: none;
+    font-size: 0.8em;
+}
+#nameError.visible {
+    display: block;
+}
+.dashboard{
+    width: 40%;
+}
+.attribution, div {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
