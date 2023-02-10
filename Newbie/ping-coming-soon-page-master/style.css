@@ -1,4 +1,3 @@
-@import url(script.js);
 *{
     margin: 0;
     padding: 0;
@@ -52,12 +51,16 @@ button{
 img{
     margin:2rem 0;
 }
+input:not(:placeholder-shown):invalid{
+    border: solid 1px hsl(354, 100%, 66%);
+}
 #nameError {
     display: none;
     font-size: 0.8em;
+    color:hsl(354, 100%, 66%);
 }
 #nameError.visible {
-    display: block;
+    display: block!important;
 }
 .dashboard{
     width: 40%;

@@ -1,10 +1,15 @@
-const submit = document.getElementById("submit");
+var submit = document.getElementById("submit");
+var nameError = document.getElementById("emailError");
+var form = document.getElementById("form")
+submit.addEventListener("submit", validate);
 
-submit.addEventListener("click", validate);
+var my_func = function (event) {
+  event.preventDefault();
+};
+form.addEventListener("submit", my_func, true);
 
 function validate(e) {
   e.preventDefault();
-
   const emailField = document.getElementById("email");
   let valid = true;
 
@@ -13,7 +18,6 @@ function validate(e) {
     nameError.classList.add("visible");
     emailField.classList.add("invalid");
     nameError.setAttribute("aria-hidden", false);
-    nameError.setAttribute("aria-invalid", true);
   }
 
   return valid;

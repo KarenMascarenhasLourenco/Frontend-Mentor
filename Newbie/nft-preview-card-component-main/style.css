@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    color:aliceblue;
+    font-family: 'Outfit';
+}
+main{
+    background-color: hsl(216, 50%, 16%);
+    width:20%;
+    padding:2rem;
+    border-radius: 1em;
+    margin:1rem 0;
+    font-weight: 300;
+}
+main .product{
+    width:100%;
+    border-radius:1rem;
+}
+main .product:hover{
+    background-image: url(./images/icon-view.svg);
+    opacity: 50%;
+}
+h1{
+    padding:1em 0;
+    font-weight: 400;
+}
+.ethereum{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.details{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+.perfil{
+    padding-right:1em;
+    width:10%;
+}
+.perfil-creator, .details{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.icon{
+    padding-right:.4rem;
+}
+footer{
+    bottom: 0;
+    position:fixed;
+}
+.view {
+    background-color:hsl(178, 100%, 50%);
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+.image-product {
+    position: relative;
+}
+.product {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.image-product .middle{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%);
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.image-product:hover .middle {
+    opacity: .35;
+}
+@media (max-width:375px) {
+    main{
+        width:70%;
+    }
+}
