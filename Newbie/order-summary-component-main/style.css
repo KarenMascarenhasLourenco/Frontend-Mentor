@@ -1,0 +1,65 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width: 100%;
+    font-family:'Red Hat Display';
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#plan{
+    
+}
+main{
+    width:30%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+main #header-image {
+    width: 100%;
+    border-radius:1rem 1rem 0 0;
+}
+p{
+    font-size:16px;
+}
+h1{
+    padding: 0.5em 0;
+}
+section{
+    margin:2em;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsl(225, 100%, 98%);    
+    text-align: left;
+    padding: 0.5em;
+    border-radius: 5%;
+}
+#texts{
+    margin: 1em 2em;
+}
+button{
+    width: 80%;
+    height: 3em;
+    margin:1em 0;
+    border:none;
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+    border-radius: 1em;
+}
+#button-principal{
+    box-shadow: 0 1px;
+}
