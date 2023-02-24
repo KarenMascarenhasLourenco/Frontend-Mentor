@@ -2,7 +2,6 @@
     font-size: 11px;
     text-align: center;
 }
-
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
@@ -18,15 +17,16 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-#plan{
-    
+    justify-content: center;
+    min-height: 100vh;
 }
 main{
     width:30%;
     text-align: center;
     border-radius: 1rem;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 main #header-image {
     width: 100%;
@@ -34,19 +34,35 @@ main #header-image {
 }
 p{
     font-size:16px;
+    line-height: 22px;
+    color: grey;
 }
 h1{
+    font-size: 22px;
     padding: 0.5em 0;
 }
+section h3, section p, section a{
+    font-size: 14px;
+}
 section{
-    margin:2em;
+    margin:1em 2em;
     display:flex;
     align-items: center;
     justify-content: space-around;
     background-color: hsl(225, 100%, 98%);    
     text-align: left;
-    padding: 0.5em;
+    padding: 1em 0.5em;
     border-radius: 5%;
+}
+section img{
+    padding-right: 10px;
+}
+section div{
+    display: flex;
+    align-items: center;
+}
+#plan{
+    display:block;
 }
 #texts{
     margin: 1em 2em;
@@ -54,12 +70,26 @@ section{
 button{
     width: 80%;
     height: 3em;
-    margin:1em 0;
+    margin-bottom:1.5em;
     border:none;
-    background-color: hsl(245, 75%, 52%);
-    color:white;
+    background-color: #fff;
     border-radius: 1em;
+    font-weight: 700;
+    color:gray;
 }
 #button-principal{
-    box-shadow: 0 1px;
+    box-shadow: 0 1em 10px lightgray;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+a, button{
+    cursor: pointer;
+}
+#button-principal:hover{
+    background-color:hsl(245, 50%, 60%);
+}
+@media (max-width: 375px) {
+    main{
+        width: 90%;
+    }
 }
