@@ -1,0 +1,72 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    min-height:100vh;
+    text-align: center;
+    font-family: 'Kumbh Sans';
+}
+h1,p{
+    color:hsl(0, 0%, 59%);
+}
+h2,strong{
+    color: black;
+    font-weight: 700;
+}
+h2{
+    font-size: 18px;
+}
+main{
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    justify-content:center;
+    border-radius: 1rem;
+}
+#info{
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+#mural{
+    border-radius: 1rem 1rem 0 0;
+}
+#profile-photo{
+    border-radius: 50%;
+    position:absolute;
+    top:92px;
+    left:127px;
+    z-index: 40;
+}
+h1{
+    padding-top:60px;
+    padding-bottom: 5px;
+}
+#stats{
+    display: flex;
+    justify-content:space-around;
+    padding:0 2rem 2rem 2rem;
+}
+hr{
+    margin:2rem 0;
+}
+footer{
+    position:fixed;
+    bottom:0;
+}
