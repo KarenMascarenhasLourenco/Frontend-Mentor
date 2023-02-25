@@ -20,8 +20,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://your-solution-url.com)
-- Live Site URL: [Solution Live](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/profile-card-component-main)
+- Live Site URL: [Solution Live](https://dashing-salamander-733912.netlify.app/)
 
 ### Built with
 
