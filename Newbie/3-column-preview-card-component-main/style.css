@@ -17,16 +17,17 @@ body{
     justify-content: center;
     min-height: 100vh;
     font-family: 'Lexend Deca';
+    background-color: aliceblue;
 }
 main{
     display: flex;
     width: 70%;
     color: white;
+    border-radius: 1rem;
 }
 section{
     padding: 3rem;
     gap: 2rem;
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,6 +60,7 @@ button:hover{
 }
 #sedans{
     background-color:hsl(31, 77%, 52%);
+    border-radius: 1rem 0 0 1rem;
 }
 #sedans button{
     color:hsl(31, 77%, 52%);
@@ -79,6 +81,7 @@ button:hover{
 }
 #luxury {
     background-color:hsl(179, 100%, 13%);
+    border-radius: 0 1rem 1rem 0;
 }
 #luxury button {
     color:hsl(179, 100%, 13%);
