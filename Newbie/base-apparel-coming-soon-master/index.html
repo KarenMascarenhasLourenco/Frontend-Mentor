@@ -19,10 +19,14 @@
       <h1>We're <strong>coming soon</strong></h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store.
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form>
+      <form novalidate>
         <label for="email"></label>
-        <input id="email" type="email" placeholder="Email Address">
-        <button>></button>
+        <input id="email" type="email" placeholder="Email Address" required>
+        <span id="email-error-message" class="error-message"></span>
+        <div id="error-button">
+          <img src="./images/icon-error.svg" alt="icon error" id="icon-error" class="show-icon">
+          <button type="submit">></button>
+        </div>
       </form>
     </section>
     <div id="promo-photo">
