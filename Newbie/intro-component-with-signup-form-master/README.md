@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/intro-component-with-signup-form-master)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://glowing-snickerdoodle-db9662.netlify.app/)
 
 ### Built with
 
