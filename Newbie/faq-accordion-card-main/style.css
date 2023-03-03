@@ -1,0 +1,151 @@
+.attribution {
+    color:#fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans';
+    font-size:12px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: 75%;
+    background-color: #fff;
+    border-radius: 2rem;
+    min-height: 70vh;
+}
+.container-picture{
+    height: 60%;
+}
+main .promo-pictures{
+    box-sizing: content-box;
+    grid-column: 1;
+    position: relative;
+    margin:1rem;
+    left:-5rem;
+    bottom:5rem;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 100%;
+    grid-column: 2;
+    margin:1rem 1rem 1rem 0;
+}
+h1,h2{
+    width: 100%;
+}
+h1{
+    font-size:2rem;
+}
+h2{
+    font-size: 1.2rem;
+    font-weight:400;
+}
+.box-picture {
+    position: absolute;
+    bottom:15%;
+    z-index: 2;
+}
+summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+summary:hover{
+    color:hsl(14, 88%, 65%);
+}
+summary::after {
+    content: url(./images/icon-arrow-down.svg);
+    color:hsl(14, 88%, 65%);
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.2s ease-in-out;
+    padding: 1rem;
+}
+details[open]{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+details[open] summary{
+    border:none;
+}
+details[open] H2{
+    font-weight: 700;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+@media (max-width:375px){
+    main{
+        margin:30% 1rem 10% 1rem;
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content:center;
+    }
+    .container-picture {
+       height: 6rem;
+       width: 100%;
+    }
+    .promo-pictures{
+        display: flex;
+        justify-content: center;
+    }
+    main .container-picture .promo-pictures {
+        left: auto;
+        bottom: auto;
+        top:-7rem;
+    }
+    main .container-picture img{
+        width: 80%;
+    }
+    .box-picture{
+        width: 30%!important;
+        left:1%;
+    }
+    section{
+        padding:1rem;
+        margin:1rem;
+    }
+    h1{
+        text-align:center;
+        padding-bottom:2rem;
+    }
+    h2{
+        font-size:1rem;
+    }
+    details{
+        padding:.5rem 0;
+    }
+    footer {
+        position:inherit;
+    }
+}
