@@ -31,7 +31,10 @@ h2{
 form{
     margin: 1rem 0;
 }
-
+form div{
+    display:flex;
+    text-align:left;
+}
 input, button{
     height: 3em;
     border-radius: 2em;
@@ -42,11 +45,18 @@ input{
     padding-left: 1em;
     margin-right: 1em;
 }
+.invalid{
+    border: solid 1px hsl(354, 100%, 66%);
+}
 button{
     background-color: hsl(223, 87%, 63%);
     color:white;
     border:none;
     width: 10em;
+    cursor:pointer;
+}
+button:hover{
+    background-color:hsl(223, 100%, 88%);
 }
 img{
     margin:2rem 0;
@@ -54,16 +64,18 @@ img{
 input:not(:placeholder-shown):invalid{
     border: solid 1px hsl(354, 100%, 66%);
 }
-#nameError {
-    display: none;
-    font-size: 0.8em;
+.nameError{
+    margin:0.5rem 0;
+    padding-left: 1rem;
+    font-size: 0.75rem;
     color:hsl(354, 100%, 66%);
-}
-#nameError.visible {
-    display: block!important;
 }
 .dashboard{
     width: 40%;
+}
+.social-media a img{
+    width: 2rem;
+    margin:.5rem;
 }
 .attribution, div {
     font-size: 11px;
@@ -72,4 +84,28 @@ input:not(:placeholder-shown):invalid{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+@media (max-width:375px){
+    main{
+        text-align: center;
+        width: 90%;
+    }
+    form div{
+        flex-direction: column;
+    }
+    input,button{
+        margin:.5rem 0;
+    }
+    input{
+        width: calc(100% - 1rem);
+    }
+    form,button,.dashboard{
+        width: 100%;
+    }
+    p{
+        font-size:.6rem;
+    }
+    .social-media a img {
+        width: 1rem;
+    }
 }

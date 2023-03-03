@@ -1,24 +1,24 @@
-var submit = document.getElementById("submit");
-var nameError = document.getElementById("emailError");
-var form = document.getElementById("form")
-submit.addEventListener("submit", validate);
+const form =document.querySelector("form"),
+      nameError = document.querySelector(".nameError"),
+      email =document.getElementById("email");
 
-var my_func = function (event) {
-  event.preventDefault();
-};
-form.addEventListener("submit", my_func, true);
-
-function validate(e) {
-  e.preventDefault();
-  const emailField = document.getElementById("email");
-  let valid = true;
-
-  if (!emailField.value) {
-    const nameError = document.getElementById("nameError");
-    nameError.classList.add("visible");
-    emailField.classList.add("invalid");
-    nameError.setAttribute("aria-hidden", false);
-  }
-
-  return valid;
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
+
+form.addEventListener("submit", (event) => {
+ event.preventDefault();
+ if (!isValidEmail(email.value) || email.value === "") {
+   nameError.textContent = "Please provide a valid email address";
+   nameError.style.display = "block";
+   nameError.setAttribute("aria-hidden", "false");
+   email.classList.add("invalid");
+ } else {
+  nameError.classList.toogle = "invalid";
+  nameError.style.display = "none";
+  form.submit();
+ }
+});
+
+  
