@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/clipboard-landing-page-master)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://voluble-gelato-6c3c3e.netlify.app/)
 
 ### Built with
 
