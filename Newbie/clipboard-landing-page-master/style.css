@@ -36,9 +36,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .primary-info-section, .third-info-section, .fourth-info-section, .fifth-info-section{
-    padding: 0 15%;
     width: 90%;
     margin-bottom: 5rem;
 }
