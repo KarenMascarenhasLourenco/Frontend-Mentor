@@ -21,6 +21,8 @@ Users should be able to:
 
 ![](./screenshot.png)
 
+![](./screenshot-mobile.png)
+
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/news-homepage-main)
