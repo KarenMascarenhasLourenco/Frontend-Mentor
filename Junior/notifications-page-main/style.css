@@ -1,0 +1,133 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(210, 60%, 98%);
+}
+main{
+    background-color:#fff;
+    padding:1rem 2rem;
+    border-radius: .5rem;
+    width: 50%;
+    margin:1rem 0;
+}
+h1{
+    font-size:1.5rem;
+    line-height: 2rem;
+}
+strong:hover, a:hover{
+    color:hsl(219, 85%, 26%)!important;
+    cursor:pointer;
+    font-weight: 700;
+}
+.unread-notification span {
+    display: inline-block;
+    background-color: hsl(1, 90%, 64%);
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+.title-notification-section strong{
+    font-size: .8rem;
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    font-weight:500;
+    padding:0.2rem .7rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+}
+.title-notification-section{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.title-notification-section div{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration:none;
+    color:hsl(219, 14%, 63%);
+}
+.notification-item{
+    display: flex;
+    margin:1rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.mention{
+    justify-content: space-between;
+}
+.mention .post-picture img{
+    width: 4.5rem;
+    cursor:pointer;
+}
+.main-content-notification{
+    display: flex;
+}
+.unread-notification{
+    background-color:hsl(210, 60%, 98%);
+}
+.notification-item h2{
+    color: hsl(219, 14%, 63%);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.notification-item h2 strong{
+    color:#333;
+}
+h2 strong.post{
+    color:hsl(219, 12%, 42%);
+}
+h2 strong.group-mention{
+    color:hsl(219,
+        85%,
+        26%);
+}
+.private-message{
+    padding:1rem;
+    border:1px solid hsl(211, 68%, 94%);
+    border-radius: .5rem;
+    color:hsl(219, 12%, 42%);
+}
+.private-message:hover{
+    background-color:hsl(205, 33%, 90%);
+    cursor:pointer;
+}
+.profile-picture-container img{
+    width:3rem;
+    height:3rem;
+    margin-right: 1rem;
+}
+.time-stamp{
+    color: hsl(219, 14%, 63%);
+    margin: .3rem 0;
+}
+@media (max-width:375px){
+    main{
+        width:calc(100% - 2rem);
+        margin:0;
+    }
+    h1{
+        font-size:1.2rem;
+    }
+}
