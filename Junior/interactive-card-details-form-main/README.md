@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/interactive-card-details-form-main)
+- Live Site URL: [Live Site URL](https://glittery-cranachan-8eb188.netlify.app/)
 
 ### Built with
 
