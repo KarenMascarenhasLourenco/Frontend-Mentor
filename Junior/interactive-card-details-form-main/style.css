@@ -30,6 +30,21 @@ main{
     justify-content: space-around;
     align-items: center;
 }
+section{
+    text-align: center;
+    display:flex;
+    align-items: center;
+}
+section p{
+    text-transform: none;
+    color:hsl(279, 6%, 55%);
+}
+section img{
+    width:3rem;
+}
+h1{
+    margin:1rem 0;
+}
 .card-section{
     width:40%;
     color: #fff;
@@ -64,13 +79,10 @@ main{
     flex-direction: column;
     justify-content:space-around;
     height: calc(100% - 2rem);
-    width: 50%;
-}
-.card-front-info{
-    width:90%!important;
+    width: 90%;
 }
 .card-number{
-    font-size:1.5rem;
+    font-size:1.2rem;
     text-align:center;
 }
 .name-card{
@@ -83,21 +95,7 @@ main{
     left:9rem;
     bottom:48%;
 }
-.full-circle {
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background-color: #fff;
-}
-.border-circle{
-    display:inline-block;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    border:1px solid #fff;
-}
-.form-section{
+.form-section, section{
     width: 25rem;
     display:flex;
     flex-direction: column;
@@ -124,6 +122,16 @@ input{
     height:2.5rem;
     border-radius: .4rem;
     padding-left:1rem;
+    border:1px solid hsl(279, 6%, 55%);
+}
+input:active{
+    border: 1px solid linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%))
+}
+.invalid-input{
+    border:1px solid hsl(0, 100%, 66%);
+}
+.date-card-inline p{
+    display:inline;
 }
 .date-card{
     width:4rem;
@@ -133,6 +141,11 @@ label{
     font-size:.8rem;
     letter-spacing:.2rem;
     color:hsl(278, 68%, 11%);
+}
+form p{
+    text-transform: capitalize;
+    color:hsl(0, 100%, 66%);
+    font-size:.8rem
 }
 .no-show{
     display: none;
@@ -146,7 +159,57 @@ button{
     background-color: hsl(278, 68%, 11%);
     color: #fff;
 }
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 footer {
     position: fixed;
     bottom: 0;
+}
+
+@media(max-width:375px){
+    body{
+        justify-content: space-around;
+        background-image: url('./images/bg-main-mobile.png');
+    }
+    .card-section{
+        width: 100%;
+        flex-direction: column-reverse;
+        top:-1rem;
+    }
+    .card-front{
+        position :absolute;
+        z-index: 2;
+        left: 1rem;
+        top:8rem
+    }
+    .card-back-pictures img{
+        left:3rem;
+        top:2rem;
+    }
+    .cvc-card{
+        left:auto;
+        bottom:3rem;
+        right: 1rem;
+    }
+    section{
+        margin-bottom:3rem;
+    }
+    main{
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+    .form-section, section{
+        width: 90%;
+    }
+    .date-card{
+        width: 4rem;
+    }
+    #cvc-card{
+        width:6rem;
+    }
+    footer{
+        position:inherit;
+    }
 }
