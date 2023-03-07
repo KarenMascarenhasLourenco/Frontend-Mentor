@@ -27,13 +27,14 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/notifications-page-main)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Live Site URL: [Live Site URL](https://playful-syrniki-4e2995.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- JavaScript
 
 ## Author
 
