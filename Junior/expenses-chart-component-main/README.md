@@ -23,11 +23,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+![](./screenshot-mobile.jpg)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/expenses-chart-component-main)
+- Live Site URL: [Live Site URL](https://adorable-melba-7ee19c.netlify.app/)
 
 ### Built with
 
