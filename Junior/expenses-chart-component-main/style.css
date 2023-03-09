@@ -1,0 +1,125 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+}
+main .balance-section{
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    padding:1rem 1.5rem;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 1rem;
+    color: #fff;
+
+}
+h1{
+    font-size:1rem;
+    font-weight: 400;
+    padding-bottom: .5rem;
+}
+.week-days p{
+    display: inline;
+}
+hr{
+    margin: 1rem 0;
+    background-color: hsl(28, 10%, 53%);
+}
+.balance-by-time-section h2{
+    font-size:1.5rem;
+}
+.balance-by-time-section{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    color: hsl(25, 47%, 15%);
+    background-color: hsl(33, 100%, 98%);
+    margin-top:1rem;
+}
+.month-balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.month-balance h2, .month-balance .description-month{
+    font-size:.8rem;
+    font-weight: 400;
+    color:hsl(28, 10%, 53%);
+}
+.week-days{
+    height: 15rem;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: end;
+    gap:0.4rem;
+    
+    text-align: center;
+}
+.day-chart{
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+    cursor:pointer;
+    font-size: .8rem;
+}
+.day-chart div{
+    background-color: hsl(10, 79%, 65%);
+    border-radius:.5rem;
+}
+
+span{
+    background-color:#222;
+    padding:.2rem;
+    border-radius: .3rem;
+    color: #eee;
+    font-size: .6rem;
+}
+.day-chart:hover div{
+    background-color:hsl(10, 99%, 75%);
+}
+.day-chart:hover span{
+    display:block;
+    transform: translateY(-10px);
+}
+.no-show{
+    display:none;
+}
+h3{
+    font-size:2rem;
+    margin-top: .3rem;
+}
+.description-div{
+    text-align: right;
+}
+.max-amount {
+    background-color: hsl(186, 34%, 40%)!important;
+}
+
+.max-amount:hover {
+    background-color: hsl(186, 34%, 60%)!important;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
