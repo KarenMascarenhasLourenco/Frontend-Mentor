@@ -21,7 +21,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/profile-card-component-main)
-- Live Site URL: [Solution Live](https://dashing-salamander-733912.netlify.app/)
+- Live Site URL: [Solution Live](https://profile-card-karen-lourenco.netlify.app/)
 
 ### Built with
 
