@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/order-summary-component-main
-- Live Site URL: https://ubiquitous-concha-1075e8.netlify.app/
+- Live Site URL: https://order-summary-karen-lourenco.netlify.app/
 
 ### Built with
 
