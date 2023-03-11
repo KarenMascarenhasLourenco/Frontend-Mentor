@@ -24,9 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/3-column-preview-card-component-main
-- Live Site URL: https://imaginative-duckanoo-ae9fe3.netlify.app/
-
-## My process
+- Live Site URL: (https://column-preview-card-karen-lourenco.netlify.app/)
 
 ### Built with
 
