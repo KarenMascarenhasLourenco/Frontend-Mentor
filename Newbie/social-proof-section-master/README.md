@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/social-proof-section-master)
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://social-proof-karen-lourenco.netlify.app/)
 
 ### Built with
 
