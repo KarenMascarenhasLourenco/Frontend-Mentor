@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/article-preview-component-master)
-- Live Site URL: [Live Site](https://gentle-cascaron-ef3416.netlify.app/)
+- Live Site URL: [Live Site](https://article-preview-karen-lourenco.netlify.app/)
 
 ### Built with
 
