@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/faq-accordion-card-main)
-- Live Site URL: [Live Site](https://rococo-frangollo-802bfa.netlify.app/)
+- Live Site URL: [Live Site](https://faq-accordion-karen-lourenco.netlify.app/)
 
 ### Built with
 

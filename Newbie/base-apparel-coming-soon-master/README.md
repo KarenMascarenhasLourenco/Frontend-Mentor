@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/base-apparel-coming-soon-master)
-- Live Site URL: [Live Site](https://famous-sopapillas-f3818c.netlify.app/)
+- Live Site URL: [Live Site](https://base-apparel-karen-lourenco.netlify.app/)
 
 ### Built with
 
