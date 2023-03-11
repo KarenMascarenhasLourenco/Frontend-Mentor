@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/huddle-landing-page-with-single-introductory-section-master)
-- Live Site URL: [Live Site](https://super-paprenjak-75efbf.netlify.app/)
+- Live Site URL: [Live Site](https://huddle-landing-page-karen-lourenco.netlify.app/)
 
 ### Built with
 
