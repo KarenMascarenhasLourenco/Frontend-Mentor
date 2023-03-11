@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/ping-coming-soon-page-master)
-- Live Site URL: [Live Site](https://marvelous-concha-a3fb7e.netlify.app/)
+- Live Site URL: [Live Site](https://ping-page-karen-lourenco.netlify.app/)
 
 ### Built with
 
