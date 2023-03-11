@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/single-price-grid-component-master)
-- Live Site URL: [Live Site](https://curious-trifle-7ac574.netlify.app/)
+- Live Site URL: [Live Site](https://single-price-grid-karen-lourenco.netlify.app/)
 
 ### Built with
 
