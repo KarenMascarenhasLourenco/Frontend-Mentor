@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header>
+    <div class="navigation-div">
+      <img alt="" src="./images/logo.svg">
+      <nav class="desktop-nav">
+        <ul>
+          <li class="subitem-menu">Features
+            <ul class="subitems features-subitem">
+              <li><a href=""><img alt="" src="./images/icon-todo.svg">Todo List</a> </li>
+              <li><a href=""><img alt="" src="./images/icon-calendar.svg">Calendar</a> </li>
+              <li><a href=""><img alt="" src="./images/icon-reminders.svg">Reminders</a> </li>
+              <li><a href=""><img alt="" src="./images/icon-planning.svg">Planning</a> </li>
+            </ul>
+          </li>
+          <li class="subitem-menu">Company
+            <ul class="subitems">
+              <li><a href="">History</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="">Careers</a> </li>
+          <li><a href="">About</a> </li>
+        </ul>
+      </nav>
+  </div>
+    <div class="button-container">
+      <button>Login</button>
+      <button class="register-button">Register</button>
+    </div>
+    <button title="menu-toggle" class="menu-toggle" aria-hidden="true"></button>
+    <div class="nav-mobile" aria-hidden="true">
+      <nav>
+        <ul>
+          <li class="item subitem-menu">Features
+            <ul class="subitem-hidden">
+              <li><a href=""><img alt="" src="./images/icon-todo.svg">Todo List</a> </li>
+              <li><a href=""><img alt="" src="./images/icon-calendar.svg">Calendar</a> </li>
+              <li><a href=""><img alt="" src="./images/icon-reminders.svg">Reminders</a> </li>
+              <li><a href=""><img alt="" src="./images/icon-planning.svg">Planning</a> </li>
+            </ul>
+          </li>
+          <li class="item subitem-menu">Company
+            <ul class="subitem-hidden">
+              <li><a href="">History</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="">Careers</a> </li>
+          <li><a href="">About</a> </li>
+        </ul>
+        <button>Login</button>
+        <button class="register-button">Register</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="logo-grid">
+        <div>
+          <img alt="client databiz" src="./images/client-databiz.svg">
+        </div>
+        <div>
+          <img alt="client audiophile" src="./images/client-audiophile.svg">
+        </div>
+        <div>
+          <img alt="client meet" src="./images/client-meet.svg">
+        </div>
+        <div>
+          <img alt="client maker" src="./images/client-maker.svg">
+        </div>
+      </div>
+    </section>
+    <div class="promo-picture">
+      <picture>
+        <source media="(max-width:375px)" srcset="./images/image-hero-mobile.png" >
+        <img alt="" src="./images/image-hero-desktop.png">
+      </picture>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://karenmascarenhaslourenco.github.io/">Karen Lourenço</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
