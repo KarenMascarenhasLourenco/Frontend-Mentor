@@ -20,12 +20,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/intro-section-with-dropdown-navigation-main)
+- Live Site URL: [Live Site](https://intro-section-jr-karen-lourenco.netlify.app/)
 
 ### Built with
 
@@ -33,6 +33,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScript
 
 ## Author
 
