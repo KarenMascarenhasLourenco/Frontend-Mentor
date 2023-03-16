@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/advice-generator-app-main)
 - Live Site URL: [Live Site URL](https://your-live-site-url.com)
 
 ### Built with
@@ -35,6 +35,7 @@ Users should be able to:
 - CSS Grid
 - JavaScript
 - 3rd-party API
+- TypeScript
 
 ## Author
 
