@@ -22,6 +22,7 @@ body {
   font-size: 18px;
   font-family: 'Epilogue', sans-serif;
 }
+/*header style*/
 header{
   width: 90%;
   display:flex;
@@ -91,9 +92,11 @@ nav li:hover ul li a, nav li ul.active li a{
   align-items: center;
   padding:.3rem 0;
 }
-.menu-toggle, .nav-mobile{
+
+.menu-toggle, .nav-mobile{/*only for mobile*/
   display:none;
 }
+/*end of header style*/
 main{
   margin:1rem 0;
   width: 70%;
@@ -124,6 +127,7 @@ p{
   width: 100%;
   box-sizing: none;
 }
+/*buttons styles*/
 button{
   padding: .5rem 1rem;
   border:none;
@@ -154,10 +158,10 @@ section button{
 section button:hover{
   background-color: transparent;
 }
+
+
 @media (max-width:375px) {
-  header{
-    justify-content: space-between;
-  }
+  /*seting elements display*/
   .desktop-nav, .button-container{
     display: none;
   }
@@ -175,6 +179,7 @@ section button:hover{
     z-index: 3;
     right: 1rem;
   }
+  /*side menu*/
   header .nav-mobile.open{
     display: block !important;
     position: fixed;
@@ -194,7 +199,7 @@ section button:hover{
     display: none;
     margin-top: .5rem;
   }
-  .nav-mobile.open nav ul .subitem-hidden.active {
+  .subitem-hidden.active {
       display: flex!important;
       flex-direction: column;
       gap: 1rem;
@@ -208,6 +213,7 @@ section button:hover{
     flex-direction: column;
     position: inherit;
   }
+  /*end of side menu style*/
   main{
     text-align: center;
     width: 100%;
