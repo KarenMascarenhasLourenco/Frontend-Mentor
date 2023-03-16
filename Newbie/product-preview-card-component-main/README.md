@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/product-preview-card-component-main
-- Live Site URL: https://frontend-mentor-preview-card-nine.vercel.app/
+- Live Site URL: https://product-card-karen-lourenco.netlify.app/
 
 ## My process
 

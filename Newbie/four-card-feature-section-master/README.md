@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/four-card-feature-section-master)
-- Live Site URL: [Live Site](https://fastidious-cajeta-bffde6.netlify.app/)
+- Live Site URL: [Live Site](https://four-card-feature-karen-lourenco.netlify.app/)
 
 ### Built with
 

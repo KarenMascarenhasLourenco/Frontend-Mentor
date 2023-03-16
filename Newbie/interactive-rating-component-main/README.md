@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/interactive-rating-component-main)
-- Live Site URL: [Live Site](https://tubular-sherbet-32edb4.netlify.app/)
+- Live Site URL: [Live Site](https://inter-rating-component-karen-lourenco.netlify.app/)
 
 ### Built with
 

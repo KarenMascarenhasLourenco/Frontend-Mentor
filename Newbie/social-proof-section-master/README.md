@@ -18,12 +18,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/social-proof-section-master)
-- Live Site URL: [Live Site](https://ephemeral-dodol-46d235.netlify.app/)
+- Live Site URL: [Live Site](https://social-proof-karen-lourenco.netlify.app/)
 
 ### Built with
 

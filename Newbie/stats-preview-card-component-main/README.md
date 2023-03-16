@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/stats-preview-card-component-main
-- Live Site URL: https://verdant-profiterole-b1c787.netlify.app/
+- Live Site URL: https://stats-preview-karen-lourenco.netlify.app/
 
 ### Built with
 

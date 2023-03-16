@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Newbie/nft-preview-card-component-main
-- Live Site URL: https://singular-crisp-b496c7.netlify.app/
+- Live Site URL: https://nft-preview-card-karen-lourenco.netlify.app/
 
 
 ### Built with
