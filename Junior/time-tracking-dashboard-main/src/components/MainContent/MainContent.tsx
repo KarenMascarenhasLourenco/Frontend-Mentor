@@ -1,36 +1,38 @@
 import React, { useState } from 'react';
 import ActivityCard from "../ActivityCard/ActivityCard";
 import ProfileCard from "../ProfileCard/ProfileCard";
-import data from "../../../public/data.json"
+import data from "../../data.json"
 
+export type Timeframe = "daily" | "weekly" | "monthly";
 
-type Timeframe = "daily" | "weekly" | "monthly";
+export type Activity = {
+  title: string;
+  timeframes: Record<Timeframe, { current: number; previous: number }>;
+};
 
-const MainContent = () => {
-  const [activeTimeframe, setActiveTimeframe] = useState<Timeframe>("weekly");
+interface Props {
+  setActiveTimeframe: (newTimeframe: Timeframe) => void;
+}
+
+const MainContent: React.FC<Props> = ({ setActiveTimeframe }) => {
+  const [timeframe, setTimeframe] = useState<Timeframe>("daily");
+
+  const filteredData = data.filter((activity: Activity) => {
+    return activity.timeframes.hasOwnProperty(timeframe);
+  });
 
   const handleTimeframeChange = (newTimeframe: Timeframe) => {
+    setTimeframe(newTimeframe);
     setActiveTimeframe(newTimeframe);
   };
 
-  const filteredData = data.map((activity) => {
-    const timeframe = activity.timeframes[activeTimeframe];
-    return {
-      title: activity.title,
-      current: timeframe.current,
-      previous: timeframe.previous,
-    };
-  }) as Activity[];
-
   return (
-    <main>
-      <ProfileCard onTimeframeChange={handleTimeframeChange} />
-      <div className="activity-cards">
-        {filteredData.map((activity) => (
-          <ActivityCard key={activity.title} activity={activity} />
-        ))}
-      </div>
-    </main>
+    <div>
+      <ProfileCard activeTimeframe={timeframe} setActiveTimeframe={handleTimeframeChange} />
+      {filteredData.map((activity: Activity) => (
+        <ActivityCard key={activity.title} activity={activity} timeframe={timeframe} />
+      ))}
+    </div>
   );
 };
 

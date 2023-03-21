@@ -1,37 +1,22 @@
-import { useState } from "react";
+import React from 'react';
 
-type Timeframe = "daily" | "weekly" | "monthly";
+import { Timeframe } from '../MainContent/MainContent';
 
-type Props = {
-  setActiveTimeframe: React.Dispatch<React.SetStateAction<Timeframe>>;
-  onTimeframeChange: (newTimeframe: Timeframe) => void;
-};
+interface Props {
+  activeTimeframe: Timeframe;
+  setActiveTimeframe: (newTimeframe: Timeframe) => void;
+}
 
-
-const ProfileCard = ({ setActiveTimeframe }: Props) => {
-  const [active, setActive] = useState<Timeframe>("weekly");
-
-  const handleTimeframeClick = (timeframe: Timeframe) => {
-    setActive(timeframe);
-    setActiveTimeframe(timeframe);
-  };
-
+const ProfileCard: React.FC<Props> = ({ activeTimeframe, setActiveTimeframe }) => {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <button onClick={() => handleTimeframeClick("daily")}>Daily</button>
-          </li>
-          <li>
-            <button onClick={() => handleTimeframeClick("weekly")}>Weekly</button>
-          </li>
-          <li>
-            <button onClick={() => handleTimeframeClick("monthly")}>Monthly</button>
-          </li>
-        </ul>
-      </nav>
-      <h2>Report for {active}</h2>
+      <h2>Monthly Overview</h2>
+      <div>
+        <h3>{activeTimeframe}</h3>
+        <button onClick={() => setActiveTimeframe('daily')}>Daily</button>
+        <button onClick={() => setActiveTimeframe('weekly')}>Weekly</button>
+        <button onClick={() => setActiveTimeframe('monthly')}>Monthly</button>
+      </div>
     </div>
   );
 };

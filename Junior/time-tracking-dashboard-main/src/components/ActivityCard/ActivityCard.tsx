@@ -1,15 +1,20 @@
 import React from 'react';
+
+import { Activity, Timeframe } from '../MainContent/MainContent';
+
 type Props = {
   activity: Activity;
+  timeframe: Timeframe;
 };
-function ActivityCard({ activity }) {
+const ActivityCard: React.FC<Props> = ({ activity, timeframe }) => {
+  const { current, previous } = activity.timeframes[timeframe];
   return (
     <div>
       <h3>{activity.title}</h3>
-      <p>Current: {activity.timeframes.current}hrs</p>
-      <p>Previous: {activity.timeframes.previous}hrs</p>
+      <p>Current: {current}hrs</p>
+      <p>Previous: {previous}hrs</p>
     </div>
   );
-}
+};
 
 export default ActivityCard;
