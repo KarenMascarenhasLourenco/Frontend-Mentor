@@ -1,6 +1,3 @@
-.profile-info{
-  background-color: hsl(264, 64%, 52%);
-}
-.daily, .weekly, .monthly{
-  color:black;
+.profile-card{
+  grid-area:profile;
 }

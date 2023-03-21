@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ActivityCard from "../ActivityCard/ActivityCard";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import data from "../../data.json"
-
+import './MainContent.css';
 export type Timeframe = "daily" | "weekly" | "monthly";
 
 export type Activity = {
@@ -30,12 +30,12 @@ const MainContent: React.FC<Props> = ({ setActiveTimeframe }) => {
   };
 
   return (
-    <div>
+    <main className='main-content'>
       <ProfileCard activeTimeframe={timeframe} setActiveTimeframe={handleTimeframeChange} />
       {filteredData.map((activity: Activity) => (
         <ActivityCard key={activity.title} activity={activity} timeframe={timeframe} />
       ))}
-    </div>
+    </main>
   );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
-
+import './ProfileCard.css'
 import { Timeframe } from '../MainContent/MainContent';
-
 interface Props {
   activeTimeframe: Timeframe;
   setActiveTimeframe: (newTimeframe: Timeframe) => void;
@@ -9,15 +8,21 @@ interface Props {
 
 const ProfileCard: React.FC<Props> = ({ activeTimeframe, setActiveTimeframe }) => {
   return (
-    <div>
-      <h2>Monthly Overview</h2>
+    <section className="profile-card">
       <div>
-        <h3>{activeTimeframe}</h3>
-        <button onClick={() => setActiveTimeframe('daily')}>Daily</button>
-        <button onClick={() => setActiveTimeframe('weekly')}>Weekly</button>
-        <button onClick={() => setActiveTimeframe('monthly')}>Monthly</button>
+        <img title='profile' src="../../../public/images/image-jeremy.png" alt='profile' />
+        <p>Report for</p>
+        <h1>Monthly Overview</h1>
       </div>
-    </div>
+      
+      <div>
+        <ul>
+          <li onClick={() => setActiveTimeframe('daily')}>Daily</li>
+          <li onClick={() => setActiveTimeframe('weekly')}>Weekly</li>
+          <li onClick={() => setActiveTimeframe('monthly')}>Monthly</li>
+        </ul>
+      </div>
+    </section>
   );
 };
 
