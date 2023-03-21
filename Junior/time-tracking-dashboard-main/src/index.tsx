@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import {Activity, Timeframe, Props} from './components/MainContent/MainContent'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import data from './data.json';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+function handleTimeframeChange(newTimeframe: Timeframe) {
+    setActiveTimeframe(newTimeframe);
+    onTimeframeChange(newTimeframe);
+  }
 root.render(
   <React.StrictMode>
-    <App />
+    <App activityData={data} onTimeframeChange={handleTimeframeChange} />
   </React.StrictMode>
 );
 

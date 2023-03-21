@@ -10,8 +10,11 @@ export type Activity = {
   timeframes: Record<Timeframe, { current: number; previous: number }>;
 };
 
-interface Props {
+export interface Props {
   setActiveTimeframe: (newTimeframe: Timeframe) => void;
+  activityData: Activity[];
+  activeTimeframe: Timeframe;
+  onTimeframeChange: (newTimeframe: Timeframe) => void
 }
 
 const MainContent: React.FC<Props> = ({ setActiveTimeframe }) => {
