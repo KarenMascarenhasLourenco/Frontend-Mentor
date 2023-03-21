@@ -44,3 +44,16 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+1.....
+vamos trabalhar em um projecto react com ts. o ambiente já está configurado e não nos preocuparemos com a estilização. guarde essas informações
+
+2....
+teremos três componentes nesse projeto. o MainContent será o elemento pai e e o ProfileCard e o ActivtyCard serão os componentes filhos. guarde essas informações.
+
+3....
+o componente ProfileCard terá um menu de navegação com três opções: daily, weekly e monthly. ao clicar em alguma dessas opções o profileCard irá mandar essa informação para o elemento pai fazer 2 coisa: filtrar dados de um data.json e gerenciar seu estado pois ele renderizará novamente caso oura opção dentre as três seja escolhida. guarde essa informação
+
+4....
+guarde o arquivo data.json:
