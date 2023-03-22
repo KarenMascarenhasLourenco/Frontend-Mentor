@@ -8,6 +8,8 @@ export type Timeframe = "daily" | "weekly" | "monthly";
 export type Activity = {
   title: string;
   timeframes: Record<Timeframe, { current: number; previous: number }>;
+  image:string;
+  backgroundColor:string;
 };
 
 export interface Props {
@@ -33,7 +35,7 @@ const MainContent: React.FC<Props> = ({ setActiveTimeframe }) => {
     <main className='main-content'>
       <ProfileCard activeTimeframe={timeframe} setActiveTimeframe={handleTimeframeChange} />
       {filteredData.map((activity: Activity) => (
-        <ActivityCard key={activity.title} activity={activity} timeframe={timeframe} />
+        <ActivityCard key={activity.title} activity={activity} timeframe={timeframe} image={activity.image} backgroundColor={activity.backgroundColor}/>
       ))}
     </main>
   );

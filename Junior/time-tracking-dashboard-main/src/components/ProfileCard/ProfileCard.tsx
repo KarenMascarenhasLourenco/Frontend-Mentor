@@ -1,27 +1,38 @@
 import React from 'react';
 import './ProfileCard.css'
 import { Timeframe } from '../MainContent/MainContent';
+
 interface Props {
   activeTimeframe: Timeframe;
   setActiveTimeframe: (newTimeframe: Timeframe) => void;
 }
 
 const ProfileCard: React.FC<Props> = ({ activeTimeframe, setActiveTimeframe }) => {
+  
   return (
     <section className="profile-card">
-      <div>
-        <img title='profile' src="../../../public/images/image-jeremy.png" alt='profile' />
-        <p>Report for</p>
-        <h1>Monthly Overview</h1>
+      <div className='profile-info'>
+        <div className='profile-picture'>
+          <img title='profile' src="/images/image-jeremy.png" alt='profile' />
+        </div>
+        <div>
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
       </div>
-      
-      <div>
+      <nav>
         <ul>
-          <li onClick={() => setActiveTimeframe('daily')}>Daily</li>
-          <li onClick={() => setActiveTimeframe('weekly')}>Weekly</li>
-          <li onClick={() => setActiveTimeframe('monthly')}>Monthly</li>
+          <li className={activeTimeframe === 'daily' ? 'active' : ''}
+              onClick={() => setActiveTimeframe('daily')}>Daily
+          </li>
+          <li onClick={() => setActiveTimeframe('weekly')}
+              className={activeTimeframe === 'weekly' ? 'active' : ''}>Weekly
+          </li>
+          <li onClick={() => setActiveTimeframe('monthly')}
+              className={activeTimeframe === 'monthly' ? 'active' : ''}>Monthly
+          </li>
         </ul>
-      </div>
+      </nav>
     </section>
   );
 };
