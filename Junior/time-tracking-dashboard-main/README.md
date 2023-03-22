@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [URL Solution](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/time-tracking-dashboard-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://time-tracking-karen-lourenco.netlify.app/)
 
 ### How to use
 To run the project, follow these steps:
