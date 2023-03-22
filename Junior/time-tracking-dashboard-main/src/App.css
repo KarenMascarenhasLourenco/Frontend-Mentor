@@ -12,3 +12,10 @@
   color:white;
   font-family: 'Rubik', sans-serif;
 }
+@media (max-width:375px){
+  footer{
+    width: 90%;
+    position:inherit;
+    text-align: center;
+  }
+}

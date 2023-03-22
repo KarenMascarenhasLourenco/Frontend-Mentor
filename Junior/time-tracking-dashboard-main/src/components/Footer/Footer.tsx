@@ -1,10 +1,12 @@
 import React from "react";
-
+import './Footer.css'
 const Footer = () => {
-  <footer className="attribution">
+  return (
+    <footer className="attribution">
     Challenge by <a rel='noopener noreferrer' href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://karenmascarenhaslourenco.github.io/">Your Name Here</a>.
   </footer>
+  )
 }
 
 export default Footer

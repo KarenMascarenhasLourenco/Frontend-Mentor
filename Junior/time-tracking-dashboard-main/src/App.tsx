@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Footer from './components/Footer/Footer'
 import MainContent, { Timeframe, Activity } from './components/MainContent/MainContent';
 
 export interface Props {
@@ -23,6 +24,7 @@ function App({ activityData, onTimeframeChange }: Props) {
         onTimeframeChange={handleTimeframeChange}
         setActiveTimeframe={setActiveTimeframe}
       />
+      <Footer/>
     </div>
   );
 }
