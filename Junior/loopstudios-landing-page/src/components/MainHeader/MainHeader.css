@@ -1,0 +1,16 @@
+.main-header{
+  height: 100vh;
+  background-image: url('../../../public/images/desktop/image-hero.jpg');
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+h1{
+  color: #fff;
+  font-size:3rem;
+  width: 22rem;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding:1rem;
+  margin:0 0 5rem 8rem
+}
