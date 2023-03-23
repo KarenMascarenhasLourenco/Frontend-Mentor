@@ -17,6 +17,5 @@
 section .info-vr{
   width: 50%;
   padding:2rem 0 0 2rem;
-  height: fit-content;
   background-color: #fff;
 }
