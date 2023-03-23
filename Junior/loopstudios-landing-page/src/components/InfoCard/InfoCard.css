@@ -8,14 +8,18 @@
   align-items: flex-end;
   background-image: url('../../../public/images/desktop/image-interactive.jpg');
   background-repeat: no-repeat;
+  background:cover;
 }
-
-.promo-vr img{
-  width: 100%;
-  height: auto;
+.no-show{
+  display: none;
 }
 section .info-vr{
-  width: 50%;
-  padding:2rem 0 0 2rem;
+  width: calc(50% - 4rem);
+  padding:3rem 0 0 3rem;
   background-color: #fff;
+}
+.info-vr h2{
+  text-transform: uppercase;
+  font-size:2rem;
+  padding-bottom: 1rem;
 }
