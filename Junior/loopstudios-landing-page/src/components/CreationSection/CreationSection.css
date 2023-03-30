@@ -1,0 +1,44 @@
+.creation-section{
+  margin:0 8rem;
+}
+.creation-items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:1rem;
+}
+.creation-items div{
+  height:28rem;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+.creation-items h3{
+  margin:1.5rem;
+  font-size: 2.2rem;
+}
+.deep-earth {
+  background-image: url('../../../public/images/desktop/image-deep-earth.jpg')
+}
+.night-arcade{
+  background-image: url('../../../public/images/desktop/image-night-arcade.jpg')
+}
+.soccer-team {
+  background-image: url('../../../public/images/desktop/image-soccer-team.jpg')
+}
+.the-grid {
+  background-image: url('../../../public/images/desktop/image-grid.jpg')
+}
+.above-vr {
+  background-image: url('../../../public/images/desktop/image-from-above.jpg')
+}
+.pocket-borealis {
+  background-image: url('../../../public/images/desktop/image-pocket-borealis.jpg')
+}
+.the-curiosity {
+  background-image: url('../../../public/images/desktop/image-curiosity.jpg')
+}
+.fisheye {
+  background-image: url('../../../public/images/desktop/image-fisheye.jpg')
+}

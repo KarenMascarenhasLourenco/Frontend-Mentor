@@ -3,7 +3,7 @@ import './CreationSection.css'
 
 const CreationSection = () => {
   return (
-    <section>
+    <section className='creation-section'>
       <div>
         <h2>Our creations</h2>
         <button>See all</button>
