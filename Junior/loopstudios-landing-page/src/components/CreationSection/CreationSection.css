@@ -6,6 +6,32 @@
   grid-template-columns: repeat(4, 1fr);
   gap:1rem;
 }
+.item-creation:hover{
+  opacity:.5;
+  cursor: pointer;
+}
+.title-creation{
+  display:flex;
+  justify-content:space-between;
+  margin:3rem 0;
+  align-items: center;
+}
+.title-creation h2{
+  text-transform: uppercase;
+  font-size:2rem;
+}
+.title-creation button{
+  text-transform: uppercase;
+  background-color:transparent;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 41%);
+}
+.title-creation button:hover{
+  background-color:black;
+  color: white;
+  border:black;
+}
 .creation-items div{
   height:28rem;
   background-repeat: no-repeat;

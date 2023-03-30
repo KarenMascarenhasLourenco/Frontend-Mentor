@@ -4,5 +4,7 @@ p{
 }
 h1,h2,h3,h4{
   font-family: 'Josefin Sans', sans-serif;
-  
+}
+a:hover{
+  border-bottom:2px solid white;
 }

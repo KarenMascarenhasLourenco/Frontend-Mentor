@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="attribution">
       <div className="social-brand">
         <img alt='' src='./images/logo.svg' />
-        <div>
+        <div className="social-media-icons">
           <img alt='' src='./images/icon-facebook.svg' />
           <img alt='' src='./images/icon-twitter.svg' />
           <img alt='' src='./images/icon-pinterest.svg' />

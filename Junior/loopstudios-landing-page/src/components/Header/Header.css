@@ -1,6 +1,6 @@
 header{
   width: calc(100% - 16rem);
-  position:fixed;
+  position:absolute;
   top:0;
   display: flex;
   margin:2rem 8rem;
