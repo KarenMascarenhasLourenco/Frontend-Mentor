@@ -1,13 +1,31 @@
-footer {
-  position: fixed;
-  bottom: 0;
-}
 .attribution {
-  font-size: 11px;
   text-align: center;
+  padding:1rem 8rem;
+  background-color: black;
+  margin-top:8rem;
+  color:aliceblue;
+}
+
+.attribution div{
+  margin:1rem 0;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+.links-footer a{
+  padding-right: 2rem;
+  color: hsl(0, 0%, 55%);
+}
+
+.info-footer, .social-brand{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.social-brand div img{
+  padding-left: 1rem;
 }
