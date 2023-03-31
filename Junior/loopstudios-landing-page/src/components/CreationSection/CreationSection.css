@@ -1,7 +1,14 @@
 .creation-section{
   margin:0 8rem;
+  display: grid;
+  grid-template-areas: 
+    "title button"
+    "item-creation item-creation";
+  grid-template-columns: 10fr 1fr;
+  justify-content: space-between;
 }
 .creation-items{
+  grid-area: item-creation;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap:1rem;
@@ -15,19 +22,24 @@
   justify-content:space-between;
   margin:3rem 0;
   align-items: center;
+  grid-area: title;
 }
 .title-creation h2{
   text-transform: uppercase;
   font-size:2rem;
 }
-.title-creation button{
+.creation-section button{
+  margin:3rem 0;
+  width: 8rem;
+  height:3rem;
   text-transform: uppercase;
   background-color:transparent;
   padding: .5rem 2rem;
   cursor: pointer;
   border: 2px solid hsl(0, 0%, 41%);
+  grid-area: button;
 }
-.title-creation button:hover{
+.creation-section button:hover{
   background-color:black;
   color: white;
   border:black;
@@ -67,4 +79,63 @@
 }
 .fisheye {
   background-image: url('../../../public/images/desktop/image-fisheye.jpg')
+}
+@media (max-width:375px){
+  .creation-section{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-creation{
+    text-align:center
+  }
+  .creation-items{
+    display:flex;
+    flex-direction:column;
+  }
+  .creation-items div{
+    height: 10rem;
+    margin:.2rem 1rem;
+    background-color: black;
+    background-size: cover;
+    opacity: .9;
+  }
+  .creation-items h3{
+    width: 50%;
+    font-weight: 300;
+    background-color: rgba(255,255,255,0.05);
+  }
+  .deep-earth {
+    background-image: url('../../../public/images/mobile/image-deep-earth.jpg')
+  }
+  
+    .night-arcade {
+      background-image: url('../../../public/images/mobile/image-night-arcade.jpg')
+    }
+  
+    .soccer-team {
+      background-image: url('../../../public/images/mobile/image-soccer-team.jpg')
+    }
+  
+    .the-grid {
+      background-image: url('../../../public/images/mobile/image-grid.jpg')
+    }
+  
+    .above-vr {
+      background-image: url('../../../public/images/mobile/image-from-above.jpg')
+    }
+  
+    .pocket-borealis {
+      background-image: url('../../../public/images/mobile/image-pocket-borealis.jpg')
+    }
+  
+    .the-curiosity {
+      background-image: url('../../../public/images/mobile/image-curiosity.jpg')
+    }
+  
+    .fisheye {
+      background-image: url('../../../public/images/mobile/image-fisheye.jpg')
+    }
+        
 }

@@ -6,7 +6,6 @@ const CreationSection = () => {
     <section className='creation-section'>
       <div className='title-creation'>
         <h2>Our creations</h2>
-        <button>See all</button>
       </div>
       <div className='creation-items'>
         <div className='item-creation deep-earth'>
@@ -34,6 +33,7 @@ const CreationSection = () => {
           <h3>Make it fisheye</h3>
         </div>
       </div>
+      <button>See all</button>
     </section>
   )};
 

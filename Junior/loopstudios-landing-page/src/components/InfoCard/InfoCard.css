@@ -23,3 +23,27 @@ section .info-vr{
   font-size:2rem;
   padding-bottom: 1rem;
 }
+@media (max-width:375px){
+  .no-show{
+    display: block;
+  }
+  .no-show img{
+    width: 100%;
+  }
+  .info-card{
+    height: 100vh;
+    background-image: none;
+    flex-direction: column;
+    margin:1rem;
+    width: inherit;
+    width: calc(100% - 2rem);
+    align-items: center;
+    justify-content: space-around;
+  }
+  section .info-vr{
+    width:inherit;
+    text-align: center;
+    padding: 0;
+  }
+
+} 

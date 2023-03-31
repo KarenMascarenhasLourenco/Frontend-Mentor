@@ -5,8 +5,10 @@
   margin-top:8rem;
   color:aliceblue;
 }
-
-.attribution div{
+.content-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin:1rem 0;
 }
 .social-media-icons img:hover{
@@ -16,7 +18,9 @@
   color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
-
+footer img{
+  margin-bottom:1rem;
+}
 .links-footer a{
   margin-right: 2rem;
   color: hsl(0, 0%, 55%);
@@ -25,10 +29,37 @@
 .info-footer, .social-brand{
   display:flex;
   justify-content:space-between;
-  align-items: center;
+  flex-direction: column;
+  min-height: 5rem;
 }
-
-.social-brand div img{
+.social-brand{
+  align-items: flex-start;
+}
+.info-footer{
+  align-items: flex-end;
+}
+.info-footer div img{
   margin-left: 1rem;
   padding-bottom: .5rem;
+}
+@media (max-width:375px){
+  .attribution{
+    padding: 1rem; 
+    margin-top: 2rem;
+  }
+  .content-footer{
+    flex-direction: column;
+  }
+  .social-brand, .info-footer, .content-footer{
+    align-items: center;
+  }
+  .links-footer{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .links-footer a{
+    margin-right:0;
+    margin-bottom: 1rem;
+  }
 }
