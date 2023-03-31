@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="social-brand">
           <img alt='' src='./images/logo.svg' />
           <div className="links-footer">
-            <a href=''>About</a>
-            <a href=''>Careers</a>
-            <a href=''>Events</a>
-            <a href=''>Products</a>
-            <a href=''>Support</a>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Events</p>
+            <p>Products</p>
+            <p>Support</p>
           </div>
         </div>
         <div className="info-footer">

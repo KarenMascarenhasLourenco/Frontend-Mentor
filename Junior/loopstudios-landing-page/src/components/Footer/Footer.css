@@ -21,9 +21,11 @@
 footer img{
   margin-bottom:1rem;
 }
-.links-footer a{
+.links-footer p{
+  display: inline-block;
   margin-right: 2rem;
   color: hsl(0, 0%, 55%);
+  cursor: pointer;
 }
 
 .info-footer, .social-brand{
@@ -58,7 +60,7 @@ footer img{
     flex-direction: column;
     margin: 1rem 0;
   }
-  .links-footer a{
+  .links-footer p{
     margin-right:0;
     margin-bottom: 1rem;
   }
