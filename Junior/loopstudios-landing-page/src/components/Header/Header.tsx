@@ -6,10 +6,13 @@ const Header = () => {
     const buttonMenu = document.getElementById('buttonMenu') as HTMLElement;
     const closeButton = document.getElementById('closeButton') as HTMLElement;
     const navMenu = document.getElementById('navMenu') as HTMLElement;
+
     function handleClick(){
-      buttonMenu.classList.toggle('active')
-      closeButton.classList.toggle('active');
-      navMenu.classList.toggle('active')
+      if (buttonMenu && closeButton && navMenu) {
+        buttonMenu.classList.toggle('active')
+        closeButton.classList.toggle('active');
+        navMenu.classList.toggle('active')
+      }
     }
 
   return(
