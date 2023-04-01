@@ -24,8 +24,10 @@ The challenge required developers to use HTML, CSS, and JavaScript skills to cre
 
 ### Screenshot
 
-<img src="./screenshot-mobile.png" alt="Mobile screenshot" width="375px">
-<img src="./screenshot.png" alt="Screenshot" width="700px">
+<div style="display:flex;">
+  <img src="./screenshot-mobile.png" alt="Mobile screenshot" width="375px">
+  <img src="./screenshot.png" alt="Screenshot" width="700px">
+</div>
 
 ### Links
 
