@@ -23,7 +23,7 @@ section .info-vr{
   font-size:2rem;
   padding-bottom: 1rem;
 }
-@media (max-width:375px){
+@media (max-width:376px){
   .no-show{
     display: block;
   }

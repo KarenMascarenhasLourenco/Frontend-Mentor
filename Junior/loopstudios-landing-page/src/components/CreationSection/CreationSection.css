@@ -80,7 +80,7 @@
 .fisheye {
   background-image: url('../../../public/images/desktop/image-fisheye.jpg')
 }
-@media (max-width:375px){
+@media (max-width:376px){
   .creation-section{
     margin:0;
     display: flex;

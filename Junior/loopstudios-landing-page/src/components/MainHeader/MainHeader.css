@@ -14,7 +14,7 @@ h1{
   padding:1.8rem;
   margin:0 0 5rem 8rem
 }
-@media (max-width:375px){
+@media (max-width:376px){
   .main-header{
     height: 100vh;
     justify-content: center;

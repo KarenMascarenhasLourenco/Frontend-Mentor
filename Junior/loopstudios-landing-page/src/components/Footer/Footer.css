@@ -44,7 +44,7 @@ footer img{
   margin-left: 1rem;
   padding-bottom: .5rem;
 }
-@media (max-width:375px){
+@media (max-width:376px){
   .attribution{
     padding: 1rem; 
     margin-top: 2rem;
