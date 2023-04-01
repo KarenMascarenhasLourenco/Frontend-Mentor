@@ -1,6 +1,7 @@
 .main-header{
   height: 100vh;
   background-image: url('../../../public/images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
