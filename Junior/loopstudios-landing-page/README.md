@@ -4,7 +4,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -14,7 +13,11 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### The challenge
 
-Users should be able to:
+The goal of the project was to create a responsive page following the design provided by Frontend Mentor. The design included a background image that changed depending on the size of the screen, a navigation menu that transformed into a menu button when the screen was resized, and a grid layout for the different elements of the page.
+
+The challenge required developers to use HTML, CSS, and JavaScript skills to create a responsive and interactive page. For this project, I opted to use CSS Grid to organize the page elements, and JavaScript to implement the background image toggle functionality.
+
+#### Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -53,6 +56,8 @@ To run the project, follow these steps:
 - [React](https://reactjs.org/) - JS library
 
 ## Author
+
+My name is Karen Mascarenhas Lourenço and I am a full stack developer. This project was a Frontend Mentor challenge that I solved to practice and improve my skills in HTML, CSS, and JavaScript, TypeScript and React. Feel free to follow me on [LinkedIn](https://www.linkedin.com/in/karenlourenco/) and see other projects I have developed.
 
 - Website - [Karen Lourenço](https://karenmascarenhaslourenco.github.io/)
 - Frontend Mentor - [@KarenMascarenhasLourenco](https://www.frontendmentor.io/profile/KarenMascarenhasLourenco)
