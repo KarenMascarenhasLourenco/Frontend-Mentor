@@ -9,6 +9,7 @@ const Header = () => {
 
     function handleClick(){
       if (buttonMenu && closeButton && navMenu) {
+        console.log('funcionando...')
         buttonMenu.classList.toggle('active')
         closeButton.classList.toggle('active');
         navMenu.classList.toggle('active')
