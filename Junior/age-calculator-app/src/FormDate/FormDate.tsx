@@ -8,7 +8,7 @@ const FormDate = () => {
 
   //results and controllers
   let dayResult:number, monthResult:number, yearResult:number,
-  validDay:boolean,validMonth:boolean,validYear:boolean;
+  validDay:boolean=false,validMonth:boolean=false,validYear:boolean=false;
 
  //function section
   //controller functions
