@@ -30,26 +30,6 @@
 
 content: 
 
-<style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    *{font-family: 'Poppins', sans-serif;}
-  </style>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
   -- years
   -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://karenmascarenhaslourenco.github.io/">Karen Lourenço</a>.
-  </div>
+  -- days  
