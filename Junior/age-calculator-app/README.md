@@ -31,8 +31,8 @@ Users should be able to:
 ### Screenshot
 
 <div style="display:flex; align-items: flex-start;">
-  <img src="./screenshot-mobile.png" alt="Mobile screenshot" width="375px">
-  <img src="./screenshot.png" alt="Screenshot" width="600px">
+  <img src="./images/screenshot-mobile.png" alt="Mobile screenshot" width="375px">
+  <img src="./images/screenshot.png" alt="Screenshot" width="600px">
 </div>
 
 ### Links
