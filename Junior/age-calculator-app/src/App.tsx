@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import MainContent from './MainContent/MainContent';
 import Footer from './Footer/Footer';
+import FormDate from './FormDate/FormDate';
 
 function App() {
   return (
     <div>
-      <MainContent/>
+      <FormDate/>
       <Footer/>
     </div>
   );

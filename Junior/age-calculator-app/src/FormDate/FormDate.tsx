@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './FormDate.css';
 const FormDate = () => {
   //get actual dates
@@ -6,10 +6,12 @@ const FormDate = () => {
   presentMonth = (new Date().getMonth() + 1),
   presentDay = new Date().getDate()
 
-  //results and controllers
-  let dayResult:number, monthResult:number, yearResult:number,
-  validDay:boolean=false,validMonth:boolean=false,validYear:boolean=false;
-
+  const [dayResult, setDayResult] = useState<number | string>("--");
+  const [monthResult, setMonthResult] = useState<number | string>("--");
+  const [yearResult, setYearResult] = useState<number | string>("--");
+ 
+ let validDay:boolean=false,validMonth:boolean=false,validYear:boolean=false;
+  
  //function section
   //controller functions
   function handleClick(){
@@ -49,25 +51,25 @@ const FormDate = () => {
     monthValue = parseInt(monthInput?.value ?? '0'),
     yearValue = parseInt(yearInput?.value ?? '0');
     //calcutations
-    yearResult = presentYear - yearValue;
-    monthResult = Math.abs(presentMonth - monthValue);
+    setYearResult( presentYear - yearValue);
+    setMonthResult(Math.abs(presentMonth - monthValue));
     //calculates amount of days between months, Math.abs is used to obtain positive results
     if (dayValue > presentDay){
       if(isA31DaysMonth(presentMonth - 1)){
-          dayResult = Math.abs(presentDay + (31 - dayValue))
+          setDayResult(Math.abs(presentDay + (31 - dayValue)))
       }else{
-          dayResult = Math.abs(presentDay + 30 - dayValue)
+          setDayResult(Math.abs(presentDay + 30 - dayValue))
       }
     }else{
-      dayResult = Math.abs(dayValue - presentDay)
+      setDayResult(Math.abs(dayValue - presentDay))
     }
     //adjusts year and month results based on completed years
-    if(monthResult > 12){
-      monthResult = monthResult - 12;
-      yearResult = yearResult + 1;
+    if(Number(monthResult) > 12){
+      setMonthResult(Number(monthResult) - 12);
+      setYearResult(Number(yearResult) + 1);
     }else if(monthValue > presentMonth){
-      monthResult = 12 - monthValue + presentMonth
-      yearResult = yearResult - 1;
+      setMonthResult(12 - monthValue + presentMonth)
+      setYearResult(Number(yearResult) - 1);
     }
     console.log(yearResult,monthResult,dayResult)
   }
@@ -129,33 +131,40 @@ const FormDate = () => {
   }
 
   return(
-    <form noValidate>
-      <div className="form-inputs">
-        <div className="day-input">
-          <label>Day<br/>
-            <input placeholder="DD"/>
-          </label><br/>
-          <span></span>  
+    <main>
+      <form noValidate>
+        <div className="form-inputs">
+          <div className="day-input">
+            <label>Day<br/>
+              <input placeholder="DD"/>
+            </label><br/>
+            <span></span>  
+          </div>
+          <div className="month-input">
+            <label>Month<br/>
+              <input placeholder="MM"/>
+            </label><br/>
+            <span></span>  
+          </div>
+          <div className="year-input">
+            <label>Year<br/>
+              <input placeholder="YYYY"/>
+            </label><br/>
+            <span></span>        
+          </div>
         </div>
-        <div className="month-input">
-          <label>Month<br/>
-            <input placeholder="MM"/>
-          </label><br/>
-          <span></span>  
+        <br/>
+        <div className="submit-div">
+          <hr/>
+          <button onClick={handleClick} title='submit' type="button"></button>
         </div>
-        <div className="year-input">
-          <label>Year<br/>
-            <input placeholder="YYYY"/>
-          </label><br/>
-          <span></span>        
-        </div>
-      </div>
-      <br/>
-      <div className="submit-div">
-        <hr/>
-        <button onClick={handleClick} title='submit' type="button"></button>
-      </div>
-    </form>
+      </form>
+      <section>
+        <h1><span>{yearResult}</span> years</h1>
+        <h2><span>{monthResult}</span> months</h2>
+        <h2><span>{dayResult}</span> days</h2>
+      </section>
+    </main>
   );
 }
 export default FormDate;
