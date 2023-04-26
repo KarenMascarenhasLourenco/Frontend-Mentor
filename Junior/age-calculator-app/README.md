@@ -4,11 +4,13 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ## Table of contents
 
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [How to use](#how-to-use)
-  - [Built with](#built-with)
+- [Frontend Mentor - Age calculator app solution](#frontend-mentor---age-calculator-app-solution)
+  - [Table of contents](#table-of-contents)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+    - [How to use](#how-to-use)
+    - [Built with](#built-with)
   - [Author](#author)
 
 ### The challenge
@@ -36,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/KarenMascarenhasLourenco/Frontend-Mentor/tree/main/Junior/age-calculator-app)
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://age-calculator-karen-lourenco.netlify.app/)
 
 ### How to use
 
