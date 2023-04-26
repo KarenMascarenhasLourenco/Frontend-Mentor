@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
 }
+main{
+  background-color: #fff;
+  padding:3rem;
+  border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+}
 label{
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -54,4 +59,15 @@ span{
 }
 .invalid input{
   border-color: hsl(0, 100%, 67%);
+}
+section span{
+  color:hsl(259, 100%, 65%);
+  font-size: 4rem;
+  line-height: 4rem;
+}
+h1, h2{
+  font-size:4rem;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: italic;
 }
