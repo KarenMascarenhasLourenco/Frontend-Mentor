@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form/Form';
 
 function App() {
   return (
-    <div className="App">
-      <h1>olá mundo do styled components</h1>
-    </div>
+    <Form/>
   );
 }
 

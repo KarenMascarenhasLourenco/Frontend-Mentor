@@ -1,0 +1,7 @@
+button{
+  cursor:pointer;
+  height: 3rem;
+  border:none;
+  font-family: 'Space Mono', monospace;
+  grid-area: button;
+}
