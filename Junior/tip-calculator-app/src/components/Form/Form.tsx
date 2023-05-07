@@ -1,6 +1,7 @@
 import React from 'react';
 import './Form.css';
 import Button from '../Button/Button';
+import Input from '../Input/Input';
 
 const Form = () => {
   return(
@@ -8,6 +9,7 @@ const Form = () => {
     <div className='infoForm'>
       <fieldset>
         <h2>Bill</h2>
+        <Input classBackground='moneySpend'/>
       </fieldset>
       <fieldset className='selectTip'>
         <h2>Select Tip %</h2>
