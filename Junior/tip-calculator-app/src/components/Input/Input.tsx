@@ -1,10 +1,10 @@
 import React from 'react';
 import './Input.css';
 
-const Input = ({classBackground} : {classBackground: string }, {placeholder} : {placeholder: string}) => {
+const Input = ({classBackground} : {classBackground: string }) => {
   return (
     <label htmlFor={classBackground}>
-      <input placeholder={placeholder} className={classBackground}/>
+      <input placeholder='0'className={classBackground}/>
     </label>
   )
 }
