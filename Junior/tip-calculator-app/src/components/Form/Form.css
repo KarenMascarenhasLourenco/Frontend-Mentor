@@ -1,0 +1,20 @@
+form{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:center;
+  width: 80vw;
+}
+fieldset{
+  border:none;
+}
+h2{
+  font-size:1rem;
+}
+.selectTip{
+  grid-template-areas: 
+  'titleTip' 'titleTip' 'titleTip'
+  'buttonTip' 'buttonTip' 'buttonTip'
+  'buttonTip' 'buttonTip' 'inputTip'
+  ;
+}
