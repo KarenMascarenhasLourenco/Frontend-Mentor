@@ -21,6 +21,7 @@ const Form = () => {
       </fieldset>
       <fieldset>
         <h2>Number of People</h2>
+        <Input classBackground='people'/>
       </fieldset>
     </div>
     <div className='previewForm'>
