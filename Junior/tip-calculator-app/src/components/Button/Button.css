@@ -3,5 +3,19 @@ button{
   height: 3rem;
   border:none;
   font-family: 'Space Mono', monospace;
-  grid-area: button;
+}
+.buttonTip5{
+  grid-area: buttonTip5;
+}
+.buttonTip10{
+  grid-area: buttonTip10;
+}
+.buttonTip15{
+  grid-area: buttonTip15;
+}
+.buttonTip25{
+  grid-area: buttonTip25;
+}
+.buttonTip50{
+  grid-area: buttonTip50;
 }

@@ -12,9 +12,13 @@ h2{
   font-size:1rem;
 }
 .selectTip{
+  display:grid;
   grid-template-areas: 
   'titleTip' 'titleTip' 'titleTip'
-  'buttonTip' 'buttonTip' 'buttonTip'
-  'buttonTip' 'buttonTip' 'inputTip'
+  'buttonTip5' 'buttonTip10' 'buttonTip15'
+  'buttonTip25' 'buttonTip50' 'inputTip'
   ;
+}
+.selectTip h2{
+  grid-area: titleTip;
 }
